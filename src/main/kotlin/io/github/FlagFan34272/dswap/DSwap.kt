@@ -34,7 +34,7 @@ class DSwap: JavaPlugin() {
                             var countdown = 300
 
                             Bukkit.getScheduler().runTaskTimer(this@DSwap, Runnable {
-                                if (countdown in 0..11) {
+                                if (countdown in 0..10) {
                                     server.onlinePlayers.forEach {
                                         it.sendMessage(text("카운트다운: $countdown", NamedTextColor.GREEN))
                                         it.playSound(it.location, Sound.BLOCK_NOTE_BLOCK_BELL, 1f, 1f)
